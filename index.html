@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h3 {background-color:#463409;
+			height:25px;
+			text-align:right;
+			color:#fffff;
+			padding-right:25px}
+		#emblem {position:absolute;
+			top:40px;
+			right:20px;}
+		#fb {position:absolute;
+			top:50px;
+			right:280px;}
+		#tw {position:absolute;
+			top:50px;
+			right:240px;}
+		#hindi {position:absolute;
+				top:80px;
+				right:205px;}
+		#feedback{position:absolute;
+				  background-color:#463409;
+				  top:120px;
+				  right:190px;
+				  padding:2px;
+				  padding-left:5px;
+				  padding-right:5px;
+		}
+		#slider{
+			position:absolute;
+			top:200px;
+			}
+		#above{
+			position:absolute;
+			z-index:2;
+			}
+
+		#data{
+			position:absolute;
+			top:520px;
+			height:100px;
+			width:1100px;
+		}
+		#newsHead{
+			position:absolute;
+			width:270px;
+			height:20px;
+			top:200px;
+			left:1070px;
+			background-color:#0066b1;
+			color:white;
+			text-align:center;
+			padding-top:3px;
+		}
+		#newsScroll{
+			position:absolute;
+			width:290px;
+			height:200px;
+			top:220px;
+			left:1050px;
+			overflow:hidden;
+		}
+		#newsBorder{
+			position:absolute;
+			width:266px;
+			height:220px;
+			top:200px;
+			left:1070px;
+			border: 2px solid black;
+		}
+		#tenderHead{
+			position:absolute;
+			width:270px;
+			height:20px;
+			top:450px;
+			left:1070px;
+			background-color:#0066b1;
+			color:white;
+			text-align:center;
+			padding-top:3px;
+		}
+		#tenderScroll{
+			position:absolute;
+			width:266px;
+			height:180px;
+			top:470px;
+			left:1090px;
+			overflow:hidden;
+		}
+		#tenderBorder{
+			position:absolute;
+			width:266px;
+			height:200px;
+			top:450px;
+			left:1070px;
+			border: 2px solid black;
+		}
+		#test{
+			background-color: #62afe5;
+			height: 150px;
+			width: 1332px;
+		}
+		#logo{
+			position: absolute;
+			top: 9px;
+			left: 25px;
+
+		}
+		#name{
+			position: absolute;
+			top: 16px;
+			left: 140px;
+		}
+		#bg{
+			position:absolute;
+			top:180px;
+			height: 500px;
+			width: 1332px;
+		}
+		marquee ul li a{
+			color:#463409;
+		}
+		th{
+			position:relative;
+			float:left;
+		}
+		th a{
+				background-color:#0066b1;
+				color:white;
+				padding-left:44px;
+				padding-right:44px;
+				padding-top:3px;
+			}
+		a {
+			text-decoration:none;
+			color:white;
+		}
+		th ul{
+			display:none;
+			list-style:none;
+		}
+		th:hover a{
+			background:#846211;}
+		th:hover ul{
+			display:block;
+			postition:relative;
+		}
+		th li a 
+		{
+			width:100px;
+			display: block;
+			text-decoration: none;
+			color: #ffffff;
+			border-top: 1px solid #ffffff;
+			padding: 5px 10px 5px 5px;
+			margin-left: 0px;
+			white-space: wrap;
+			font-size:13px;
+		}
+		th:hover li a:hover{
+			background-color:#b48820;
+		}
+	</style>
+	<title>This is the first Page</title>
+</head>
+<body>
+<div id="bg">   
+<img src="images/bg.jpg" height="500" width="1332">
+</div>
+<div id="test">
+
+</div>
+<div id="emblem">
+	<img src="images/emblem1.jpg">
+</div>
+
+<div id="logo">
+	<img src="logo1.jpg" height="150" width="190">
+</div>
+<dir id="name">
+	<img src="name.jpg" height="120" width="850">
+</dir>
+<script language="JavaScript"> 
+var i = 0;
+var path = new Array(); 
+
+path[0] = "images/bank1.jpg"; 
+path[1] = "images/bank2.jpg"; 
+path[2] = "images/bank3.jpg";
+path[3] = "images/bank4.jpg" 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1)
+	i++; 
+else 
+	i=0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+</script>
+<div id="slider">
+	<img height="400" name="slide" width="900" />
+</div>
+<div id="newsHead">News & Announcements</div>
+<div id="newsBorder"></div>
+<div id="newsScroll"><marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+<ul>
+<li><a href=""><strong>This is a new entry<img src="images/new_red.gif"></strong></a></li>
+<li><a href=""><strong>Cases of promotion taking place in the pre-revised pay structure between 1.1.2016 and the date of notification of RS(RP) Rules, 2008 .......fixation of pay</strong></a></li>
+<li><a href=""><strong>Procedure for grant of permission to the pensioners for commercial employment after retirement - revision of Form 1</strong></a></li>
+<li><a href=""><strong>Exits and Withdrawls under National Pension System</strong></a></li>
+<li><a href=""><strong>Declaration of Results for Public Competition for Waterless and Odourless Toilets</strong></a></li>
+<li><a href=""><strong>Combined railway notification</strong></a></li>
+</ul></marquee></div>
+<div id="tenderHead">New Services</div>
+<div id="tenderBorder"></div>
+<div id="tenderScroll"><marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+<strong>There are no new services.</strong>
+<br><br><br><br><br><br><br><br></marquee></div>
+	<div id="above">
+<table border='0'  cellspacing='0'>
+	<tr>
+		<th><a href="index.html">Home</a>
+		</th>
+		<th><a href="About Us.html">About US</a>
+			<ul>
+				<li><a href="">Vision</a></li>
+				<li><a href="">Motto</a></li>
+				<li><a href="">Mission</a></li>
+			</ul>
+		</th>
+		<th><a href="">Personal Banking</a>
+		    <ul>
+				<li><a href="user login.html">User Login</a></li>
+				<li><a href="">Admin Login</a></li>
+			</ul>
+		</th>
+		<th><a href="Tenders.html">Services</a>
+			<ul>
+				<li><a href="loan services.html">Loan Services</a></li>
+				<li><a href="">Mobile</a></li>
+				<li><a href="">DTH Services</a></li>
+			</ul>
+		</th>
+		<th><a href="create_account.html">Create Account</a>
+		</th>
+		<th><a href="news.html">Feedback</a>
+		</th>
+		<th><a href="Contact Us.html">Contact Us</a></th>
+		<th><a href="Contact Us.html">Deverlopers</a></th>
+	</tr>	
+</table></div>
+
+</body>
+</html>
